@@ -22,7 +22,7 @@ def create_db():
     conn = None
     try:
         # connect to the PostgreSQL server
-        conn = psycopg2.connect(host="127.0.0.1", port ="5432", user="db_user", password='db_pass')
+        conn = psycopg2.connect(host="127.0.0.1", port ="5432", user="postgres", password='postgres')
         
         conn.autocommit = True
 
@@ -61,7 +61,7 @@ def create_table():
     conn = None
     try:
         # connect to the PostgreSQL server
-        conn = psycopg2.connect(host="127.0.0.1", port ="5432", user="db_user", password='db_pass', database="scraping_db")
+        conn = psycopg2.connect(host="127.0.0.1", port ="5432", user="postgres", password="postgres", database="scraping_db")
         cur = conn.cursor()
         
         # Doping EMPLOYEE table if already exists.
@@ -100,7 +100,7 @@ def start_scraping():
     property_data = []
 
     # Establish db connection
-    conn = psycopg2.connect(host="127.0.0.1", port ="5432", user="db_user", password='db_pass', database="scraping_db")
+    conn = psycopg2.connect(host="127.0.0.1", port ="5432", user="postgres", password="postgres", database="scraping_db")
 
     # db cursor
     cur = conn.cursor()
