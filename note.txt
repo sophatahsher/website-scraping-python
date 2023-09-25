@@ -1,3 +1,0 @@
-https://www.scrapingbee.com/blog/web-scraping-101-with-python/
-
-https://www.geeksforgeeks.org/postgresql-create-table-using-python/
