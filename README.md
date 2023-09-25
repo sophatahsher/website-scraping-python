@@ -13,24 +13,24 @@ To get to know about Beautiful Soup, please see details:
 
 ### Installation
 
-```bash
+```
 $ cd python-scraping-webpage
 ```
 
 ### Create Virtual Environment
 I'm going to run python in virtual environment by running the command below:
 
-```bash
+```
 $ python3 -m venv venv
 ```
 ### Active Environment
-```bash
+```
 $ source venv/bin/active
 ```
 
 ### Install dependencies
 
-```bash
+```
 $ pip install -r requirements.txt
 ```
 
@@ -40,6 +40,6 @@ $ pip install -r requirements.txt
 - Start Scraping `python scrapper.py --start_scraping`
 
 ### Stop Working on Environment
-```bash
+```
 $ deactivate
 ```
